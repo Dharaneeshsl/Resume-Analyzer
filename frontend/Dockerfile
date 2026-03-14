@@ -1,0 +1,27 @@
+FROM node:20-alpine AS build
+
+WORKDIR /app
+
+COPY package.json package-lock.json* ./
+RUN npm install
+
+COPY . ./
+
+RUN npm run build
+
+# Production web server
+FROM nginx:1.27-alpine
+
+WORKDIR /usr/share/nginx/html
+
+COPY --from=build /app/dist ./
+
+# Simple default nginx config
+RUN rm /etc/nginx/conf.d/default.conf
+
+COPY nginx.conf /etc/nginx/conf.d/default.conf
+
+EXPOSE 80
+
+CMD ["nginx", "-g", "daemon off;"]
+
