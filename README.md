@@ -157,19 +157,6 @@ Insert a link to your demo video here:
 
 https://drive.google.com/drive/folders/194OfvGjpAf6U1uPNp-kByOHVat6HdNHx
 
-
----
-
-### Screenshots (Placeholder)
-
-Add screenshots when available, 
-
-image.png
-
-image.png
-
-image.png
-
 ---
 
 ### Notes
