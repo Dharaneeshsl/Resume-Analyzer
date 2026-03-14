@@ -1,0 +1,39 @@
+# OS / Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.log
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.venv/
+venv/
+env/
+
+# FastAPI / Uvicorn
+*.sqlite3
+
+# Node / React
+node_modules/
+dist/
+build/
+.parcel-cache/
+
+# Environment / secrets
+.env
+.env.local
+.env.*.local
+backend/.env
+frontend/.env
+
+# Misc
+*.sqlite
+*.db
+*.pdf~
+
