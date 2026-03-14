@@ -151,53 +151,30 @@ Open `http://localhost:5173` in your browser.
 
 ---
 
-### Example OpenAI Prompts (Backend)
-
-**Resume analysis prompt (simplified):**
-
-> "Analyze the following resume text and provide:
-> - Extracted skills
-> - Extracted projects
-> - Important keywords
-> - Section-wise suggestions for skills, projects, experience, formatting
-> - A resume score from 0–10
-> - A 2-line professional summary.
-> Return a valid JSON object with those fields only."
-
-**Job description comparison prompt (simplified):**
-
-> "Given this resume text and job description, return:
-> - matching_skills[]
-> - missing_skills[]
-> - alignment_score (0–100)
-> - notes (short paragraph).
-> Return a valid JSON object only."
-
-These are implemented in `backend/analyzer.py` using OpenAI’s Chat Completions API with `response_format={"type": "json_object"}` for reliable JSON outputs.
-
----
-
 ### Demo Video (Placeholder)
 
 Insert a link to your demo video here:
 
-> _Demo video_: _Coming soon_
+https://drive.google.com/drive/folders/194OfvGjpAf6U1uPNp-kByOHVat6HdNHx
+
 
 ---
 
 ### Screenshots (Placeholder)
 
-Add screenshots when available, for example:
+Add screenshots when available, 
 
-- Upload page
-- Resume Analysis Dashboard
-- JD Comparison view
+image.png
+
+image.png
+
+image.png
 
 ---
 
 ### Notes
 
-- This project is designed for hackathon/demo use. For production, you should:
+- This project is designed for hackathon/demo use. For production and future works:
   - Add authentication and rate limiting
   - Improve error handling and logging
   - Persist analysis results in a database
